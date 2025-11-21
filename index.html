@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableBuddy - Learn Math Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Selection Screen -->
+        <div id="selectionScreen" class="screen active">
+            <h1>🎮 TableBuddy</h1>
+            <p>Your Personal Math Table Coach</p>
+            
+            <div class="form-group">
+                <label>Choose a Table:</label>
+                <select id="tableSelect">
+                    <option value="">Select Table (2-20)</option>
+                </select>
+            </div>
+            
+            <button id="startBtn" class="btn-primary">Start Learning!</button>
+        </div>
+
+        <!-- Study Screen -->
+        <div id="studyScreen" class="screen">
+            <h2>📚 Study Time!</h2>
+            <div class="timer" id="timer">02:00</div>
+            
+            <div id="tableDisplay" class="table-display"></div>
+            
+            <button id="testBtn" class="btn-secondary" style="display:none;">
+                Start Test!
+            </button>
+        </div>
+
+        <!-- Test Screen -->
+        <div id="testScreen" class="screen">
+            <h2>🎯 Test Your Knowledge!</h2>
+            <div class="progress">
+                Stars: <span id="starCount">0</span> ⭐
+            </div>
+            
+            <div id="questionContainer" class="question-container"></div>
+            
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
